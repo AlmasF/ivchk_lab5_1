@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Абдугалиев Лаб 5</title>
+</head>
+<body>
+	<h1>Форма принятия на работу</h1>
+    <p>Это форма принятия на работу, заполните нижеприведенные данные, а затем отправьте</p>
+    <form action="cgi-bin/handler.php" method="get">
+        <p style="font-size: 25px; font-weight: bold;">Имя и фамилия</p>
+        <label for="fname">Имя:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Фамилия:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <p style="font-size: 25px; font-weight: bold;">Имущество</p>
+        <input type="checkbox" id="variant1" name="property" value="car">
+        <label for="vehicle1"> У меня есть машина </label><br>
+        <input type="checkbox" id="variant2" name="property" value="house">
+        <label for="vehicle2"> У меня есть жилье </label><br><br>
+
+        <p style="font-size: 25px; font-weight: bold;">День рождения</p>
+        <label for="birthday">Дата рождения:</label>
+        <input type="date" id="birthday" name="birthday">
+        <br><br>
+
+        <p style="font-size: 25px; font-weight: bold;">Электронная почта</p>
+        <label for="emails">Введите email адрес:</label>
+        <input type="email" id="emails" name="emails">
+        <br><br>
+
+        <p style="font-size: 25px; font-weight: bold;">Пол</p>
+        <label for="male">Мужчина</label>
+        <input type="radio" name="gender" value="male"><br>
+        <label for="Option2">Женщина</label>
+        <input type="radio" name="gender" value="female"><br><br>
+
+        <input type="submit">
+    </form>
+</body>
+</html>
